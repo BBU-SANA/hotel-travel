@@ -9,10 +9,10 @@
         <!-- sign up with social media -->
         <div class="row">
           <div class="col s6" style="padding: 0px;">
-            <a class="waves-effect waves-light btn-large red darken-3" style="padding-left: 20px;"><i class="fa fa-google-plus left"></i>google</a>
+            <a onclick="connectGoogle()" class="waves-effect waves-light btn-large red darken-3" style="padding-left: 20px;"><i class="fa fa-google-plus left"></i>google</a>
           </div>
           <div class="col s6" style="padding: 0px;">
-            <a class="waves-effect waves-light btn-large blue darken-4 right" style="padding-left: 20px;"><i class="fa fa-facebook left"></i>facebook</a>
+            <a onclick="connectFacebook()" class="waves-effect waves-light btn-large blue darken-4 right" style="padding-left: 20px;"><i class="fa fa-facebook left"></i>facebook</a>
           </div>
         </div>
         <!-- sign in with email register -->

@@ -117,6 +117,9 @@
       </div>
     </div>
   </footer>
+  
+  <!-- firebase google api -->
+  <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 
   <?php
   /** -- Copy from here -- */

@@ -20,10 +20,12 @@ class Signin extends CI_Controller {
 	{
 		if($this->session->userdata('is_logged_in')){
 			redirect('/');
-    }
+    	}
 		else{
 			$this->load->view('pages/signin');
 			$this->output->set_title('User Sgin In');
-    }
+
+			$this->load->js('assets/js/social-signin-signup.js');
+    	}
 	}
 }
