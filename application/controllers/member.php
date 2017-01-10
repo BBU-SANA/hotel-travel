@@ -66,7 +66,7 @@ class Member extends CI_Controller {
 		else // incorrect username or password
 		{
 			$data['login'] = TRUE;
-			$this->load->view('home', $data);
+			$this->load->view('pages/signin', $data);
 		}
 	}
 

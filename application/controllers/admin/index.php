@@ -6,6 +6,8 @@ class Index extends CI_Controller {
 	{
 		parent::__construct();
 
+		$this->load->model('Users_model');
+
 		$this->load->helper('url');
 
 	}
@@ -14,10 +16,14 @@ class Index extends CI_Controller {
 	{
 		if($this->session->userdata('is_logged_in')){
 			redirect('admin/dashboard/');
-    }
+    	}
+		elseif($this->session->userdata('logged_in')) 
+		{
+			redirect('member/dashboard/');
+		}
 		else{
-    	$this->load->view('admin/signin');
-    }
+    		$this->load->view('admin/signin');
+    	}
 	}
 
 
@@ -35,9 +41,6 @@ class Index extends CI_Controller {
   */
 	function validate_credentials()
 	{
-
-		$this->load->model('Users_model');
-
 		$user_name = $this->input->post('user_name');
 		$password = $this->__encrip_password($this->input->post('password'));
 		$language = $this->input->post('language');
@@ -59,7 +62,7 @@ class Index extends CI_Controller {
 		else // incorrect username or password
 		{
 			$data['message_error'] = TRUE;
-			$this->load->view('admin', $data);
+			$this->load->view('admin/signin', $data);
 		}
 	}
 }

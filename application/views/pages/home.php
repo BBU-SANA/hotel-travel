@@ -14,7 +14,7 @@
           <?php
           if($this->session->userdata('is_logged_in') && ($this->session->userdata('is_member')==false)){
             echo '<a href="admin/dashboard" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Start Booking</a>';
-          }elseif($this->session->userdata('is_logged_in') && ($this->session->userdata('is_member')==true)){
+          }elseif($this->session->userdata('logged_in') && ($this->session->userdata('is_member')==true)){
             echo '<a href="member/dashboard" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Start Booking</a>';
           }else{
             echo '<a href="signin" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Start Booking</a>';

@@ -25,7 +25,15 @@
             <!-- sign in with email register -->
             <?php
             $attributes = array('class' => 'form-signin');
-            echo form_open('admin/login/validate_credentials', $attributes);
+            echo form_open('admin/index/validate_credentials', $attributes);
+
+            if(isset($message_error) && $message_error == TRUE){
+              echo "<div class='form__error-wrapper js-form__err-animation'>";
+                echo "<p class='form__error'>";
+                echo "<strong>Oh snap!</strong> Change a few things up and try submitting again.";
+                echo "</p>"; 
+              echo "</div>";
+            }
             ?>
               <div class="row">
                 <div class="input-field col s12">

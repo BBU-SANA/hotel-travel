@@ -73,3 +73,41 @@ p {
 footer.page-footer {
   margin: 0px;
 }
+
+/*
+* error message box
+*/
+.js-form__err-animation {   
+  animation: shake 150ms ease-in-out; 
+} 
+.form__error-wrapper  {   
+  justify-content: center;   
+  margin: 0 auto;   
+  margin-bottom: 1em; 
+} 
+.form__error {
+   background-color: #ef5350;
+   color: white;   
+   margin: 0;   
+   padding: 0.5em 1em;   
+   font-size: 0.8em;
+   user-select: none; 
+} 
+
+.js-form__err .form__error-wrapper {   
+  display: flex; 
+} 
+@keyframes shake {   
+  0% {     
+    transform: translateX(0);   
+  }   
+  25% {     
+    transform: translateX(10px);   
+  }   
+  75% {     
+    transform: translateX(-10px);   
+  }   
+  100% {     
+    transform: translateX(0);   
+  } 
+}

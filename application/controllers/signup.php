@@ -18,12 +18,12 @@ class Signup extends CI_Controller {
 
 	public function index()
 	{
-		if($this->session->userdata('is_logged_in')){
+		if($this->session->userdata('is_logged_in') OR $this->session->userdata('logged_in')){
 			redirect('/');
-    }
+    	}
 		else{
 			$this->load->view('pages/signup');
 			$this->output->set_title('User Sgin Up');
-    }
+    	}
 	}
 }

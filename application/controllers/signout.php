@@ -12,7 +12,14 @@ class Signout extends CI_Controller {
 
 	public function index()
 	{
-    $this->session->sess_destroy();
-		redirect('/');
+		if($this->session->userdata('is_logged_in')){
+			$this->session->sess_destroy();
+			redirect('/admin');
+    	}
+		elseif($this->session->userdata('logged_in')) 
+		{
+    		$this->session->sess_destroy();
+			redirect('/signin');
+		}
 	}
 }

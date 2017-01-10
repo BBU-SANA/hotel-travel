@@ -59,7 +59,7 @@
           <li><a href="#">Gallery</a></li>
           <li><a href="#">Contact</a></li>
           <?php
-          if($this->session->userdata('is_logged_in')){
+          if($this->session->userdata('is_logged_in') OR $this->session->userdata('logged_in')){
       			echo '<li><a class="waves-effect waves-light btn" href="signout">Sign Out</a></li>';
           }else{
             echo '<li><a class="waves-effect waves-light btn" href="signin">Sign In</a></li>';

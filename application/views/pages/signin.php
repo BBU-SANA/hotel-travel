@@ -17,7 +17,16 @@
         </div>
         <!-- sign in with email register -->
         <?php
-        echo form_open('member/validate_credentials');
+        echo form_open('signin/validate_credentials');
+
+        if(isset($login) && $login == TRUE){
+          echo "<div class='row form__error-wrapper js-form__err-animation'>";
+            echo "<p class='form__error'>";
+            echo "<strong>Oh snap!</strong> Wrong username or password ! ";
+            echo "Or maybe your account is not verified yet ! ";
+            echo "</p>"; 
+          echo "</div>";
+        }
         ?>
         <div class="row">
           <div class="row">

@@ -56,7 +56,7 @@
 	            </li>
 	            <li class="divider"></li>
 	              <li>
-	              <a href="<?php echo base_url(); ?>admin/logout"><span class="glyphicon glyphicon-log-out"></span> <?php echo lang('Logout'); ?></a>
+	              <a href="<?php echo base_url(); ?>signout"><span class="glyphicon glyphicon-log-out"></span> <?php echo lang('Logout'); ?></a>
 	            </li>
 	          </ul>
 	        </li>
