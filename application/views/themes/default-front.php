@@ -52,12 +52,12 @@
         <a href="<?php echo base_url();?>" class="brand-logo">Logo</a>
         <a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Bookings</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="<?php echo base_url();?>">Home</a></li>
+          <li><a href="<?php echo base_url();?>service">Services</a></li>
+          <li><a href="<?php echo base_url();?>booking">Bookings</a></li>
+          <li><a href="<?php echo base_url();?>location">Locations</a></li>
+          <li><a href="<?php echo base_url();?>gallery">Gallery</a></li>
+          <li><a href="<?php echo base_url();?>contact">Contact</a></li>
           <?php
           if($this->session->userdata('is_logged_in') OR $this->session->userdata('logged_in')){
       			echo '<li><a class="waves-effect waves-light btn" href="signout">Sign Out</a></li>';
@@ -67,12 +67,20 @@
           ?>
         </ul>
         <ul class="side-nav" id="mobile-demo">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Bookings</a></li>
-          <li><a href="#">Locations</a></li>
-          <li><a href="#">Gallery</a></li>
-          <li><a href="#">Contact</a></li>
+          <li><a href="<?php echo base_url();?>"><i class="material-icons">home</i>Home</a></li>
+          <li><a href="<?php echo base_url();?>service"><i class="material-icons">near_me</i>Services</a></li>
+          <li><a href="<?php echo base_url();?>booking"><i class="material-icons">hotel</i>Bookings</a></li>
+          <li><a href="<?php echo base_url();?>location"><i class="material-icons">location_on</i>Locations</a></li>
+          <li><a href="<?php echo base_url();?>gallery"><i class="material-icons">photo</i>Gallery</a></li>
+          <li><a href="<?php echo base_url();?>contact"><i class="material-icons">phone</i>Contact</a></li>
+          <?php
+          if($this->session->userdata('is_logged_in') OR $this->session->userdata('logged_in')){
+      			echo '<li><a href="signout"><i class="material-icons">input</i>Sign Out</a></li>';
+          }else{
+            echo '<li><a href="signup"><i class="material-icons">group_add</i>Register</a></li>';
+            echo '<li><a href="signin"><i class="material-icons">input</i>Sign In</a></li>';
+          }
+          ?>
         </ul>
       </div>
     </nav>
@@ -117,7 +125,7 @@
       </div>
     </div>
   </footer>
-  
+
   <!-- firebase google api -->
   <script src="https://www.gstatic.com/firebasejs/3.6.4/firebase.js"></script>
 
@@ -139,6 +147,31 @@
       $( document ).ready(function(){
         $(".button-collapse").sideNav();
         $(".parallax").parallax();
+      });
+
+      $('.checkindate').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 15, // Creates a dropdown of 15 years to control years
+          onStart: function ()
+          {
+              var date = new Date();
+              this.set('select', [date.getFullYear(), date.getMonth(), date.getDate()]);
+          },
+          min: true,
+      });
+      $('.checkoutdate').pickadate({
+          selectMonths: true, // Creates a dropdown to control month
+          selectYears: 15, // Creates a dropdown of 15 years to control years
+          onStart: function ()
+          {
+              var date = new Date();
+              this.set('select', [date.getFullYear(), date.getMonth(), date.getDate()]);
+          },
+          min: 1,
+      });
+
+      $(document).ready(function() {
+        $('select').material_select();
       });
 
     </script>
