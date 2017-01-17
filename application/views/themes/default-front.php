@@ -111,10 +111,10 @@
         <div class="col l3 s12">
           <h5 class="white-text">Connect</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="mailto:info@phnompenhblinkhotel.com" target="_blank">Email</a></li>
+            <li><a class="white-text" href="http://www.facebook.com" target="_blank">Facebook</a></li>
+            <li><a class="white-text" href="http://www.twitter.com" target="_blank">Twitter</a></li>
+            <li class="white-text">Telephone: +855 (0) 63 763 711</li>
           </ul>
         </div>
       </div>
