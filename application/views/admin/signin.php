@@ -29,9 +29,9 @@
 
             if(isset($message_error) && $message_error == TRUE){
               echo "<div class='form__error-wrapper js-form__err-animation'>";
-                echo "<p class='form__error'>";
+                echo "<p class='z-depth-1 form__error'>";
                 echo "<strong>Oh snap!</strong> Change a few things up and try submitting again.";
-                echo "</p>"; 
+                echo "</p>";
               echo "</div>";
             }
             ?>

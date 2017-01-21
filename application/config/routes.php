@@ -49,8 +49,8 @@ $route['admin/login'] = 'user/index';
 $route['admin/logout'] = 'user/logout';
 $route['admin/login/validate_credentials'] = 'user/validate_credentials';
 
-$route['admin/dashboard'] = 'admin_dashboard/index';
-
+// $route['admin/dashboard'] = 'admin_dashboard/index';
+$route['admin/dashboard'] = 'admin/dashboard';
 
 $route['admin/customer'] = 'admin_customer/index';
 // $route['signup'] = 'member/signup';

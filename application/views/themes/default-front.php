@@ -54,7 +54,7 @@
         <ul class="right hide-on-med-and-down">
           <li><a href="<?php echo base_url();?>">Home</a></li>
           <li><a href="<?php echo base_url();?>service">Services</a></li>
-          <li><a href="<?php echo base_url();?>booking">Bookings</a></li>
+          <li><a href="<?php echo base_url();?>room">Rooms</a></li>
           <li><a href="<?php echo base_url();?>location">Locations</a></li>
           <li><a href="<?php echo base_url();?>gallery">Gallery</a></li>
           <li><a href="<?php echo base_url();?>contact">Contact</a></li>
@@ -69,7 +69,7 @@
         <ul class="side-nav" id="mobile-demo">
           <li><a href="<?php echo base_url();?>"><i class="material-icons">home</i>Home</a></li>
           <li><a href="<?php echo base_url();?>service"><i class="material-icons">near_me</i>Services</a></li>
-          <li><a href="<?php echo base_url();?>booking"><i class="material-icons">hotel</i>Bookings</a></li>
+          <li><a href="<?php echo base_url();?>room"><i class="material-icons">hotel</i>Rooms</a></li>
           <li><a href="<?php echo base_url();?>location"><i class="material-icons">location_on</i>Locations</a></li>
           <li><a href="<?php echo base_url();?>gallery"><i class="material-icons">photo</i>Gallery</a></li>
           <li><a href="<?php echo base_url();?>contact"><i class="material-icons">phone</i>Contact</a></li>
@@ -94,34 +94,35 @@
     <div class="container">
       <div class="row">
         <div class="col l6 s12">
-          <h5 class="white-text">Company Bio</h5>
+          <h5 class="white-text">Hotel & travel</h5>
           <p class="grey-text text-lighten-4">We are a team of college students working on this project like it's our full time job. Any amount would help support
             and continue development on this project and is greatly appreciated.</p>
 
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Settings</h5>
+          <h5 class="white-text">Page Site</h5>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Blog</a></li>
+            <li><a class="white-text" href="#!">Media</a></li>
+            <li><a class="white-text" href="#!">Contact</a></li>
+            <li><a class="white-text" href="#!">About us</a></li>
+            <li><a class="white-text" href="#!">E-Magazine</a></li>
           </ul>
         </div>
         <div class="col l3 s12">
-          <h5 class="white-text">Connect</h5>
+          <br>
+          <br>
           <ul>
-            <li><a class="white-text" href="#!">Link 1</a></li>
-            <li><a class="white-text" href="#!">Link 2</a></li>
-            <li><a class="white-text" href="#!">Link 3</a></li>
-            <li><a class="white-text" href="#!">Link 4</a></li>
+            <li><a class="white-text" href="#!">Privacy</a></li>
+            <li><a class="white-text" href="#!">Careers</a></li>
+            <li><a class="white-text" href="#!">Communities</a></li>
           </ul>
         </div>
       </div>
     </div>
     <div class="footer-copyright">
       <div class="container">
-        &copy; 2016 Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">BBU Students</a>
+        &copy; 2017 Hotels & Travel. All rights reserved. <p class="right">Made by <a class="brown-text text-lighten-3" href="http://materializecss.com">BBU Students</a></p>
       </div>
     </div>
   </footer>
@@ -167,7 +168,7 @@
               var date = new Date();
               this.set('select', [date.getFullYear(), date.getMonth(), date.getDate()]);
           },
-          min: 1,
+          min: 2,
       });
 
       $(document).ready(function() {

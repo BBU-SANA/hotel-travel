@@ -17,7 +17,7 @@ class Index extends CI_Controller {
 		if($this->session->userdata('is_logged_in')){
 			redirect('admin/dashboard/');
     	}
-		elseif($this->session->userdata('logged_in')) 
+		elseif($this->session->userdata('logged_in'))
 		{
 			redirect('member/dashboard/');
 		}

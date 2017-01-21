@@ -13,18 +13,9 @@
                             <input type="text" class="checkoutdate">
                             <label for="check_out_date">Check Out Date</label>
                         </div>
-                    </div>  
+                    </div>
                     <div class="row">
-                        <div class="input-field col m3 s4">
-                            <select>
-                                <option value="single-room">Single Room</option>
-                                <option value="double-room">Double Room</option>
-                                <option value="deluxe-room">Deluxe Room</option>
-                                <option value="family-room">Family Room</option>
-                            </select>
-                            <label>Rooms Type</label>
-                        </div>
-                        <div class="input-field col m3 s4">
+                        <div class="input-field col m3 s6">
                             <select>
                                 <option value="1">1</option>
                                 <option value="2" selected>2</option>
@@ -49,7 +40,7 @@
                             </select>
                             <label>Adults</label>
                         </div>
-                        <div class="input-field col m3 s4">
+                        <div class="input-field col m3 s6">
                             <select>
                                 <option value="0">0</option>
                                 <option value="1">1</option>
@@ -68,10 +59,9 @@
                         <div class="input-field col m3 s12 center">
                             <a class="waves-effect waves-light btn-large">Show me prices</a>
                         </div>
-                    </div>  
+                    </div>
                 </form>
             </div>
         </div>
     </div>
 </div>
-

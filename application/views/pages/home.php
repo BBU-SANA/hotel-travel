@@ -17,10 +17,10 @@
           }elseif($this->session->userdata('logged_in') && ($this->session->userdata('is_member')==true)){
             echo '<a href="member/dashboard" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Start Booking</a>';
           }else{
-            echo '<a href="booking" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Start Booking</a>';
+            echo '<a href="booking" id="download-button" class="btn-large waves-effect waves-light teal lighten-1">Booking Online<i class="material-icons left">date_range</i></a>';
           }
           ?>
-          
+
         </div>
         <br><br>
       </div>
