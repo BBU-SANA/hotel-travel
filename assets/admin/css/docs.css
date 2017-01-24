@@ -21,8 +21,6 @@ h3 code {
   font-weight: normal;
 }
 
-
-
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 
@@ -1064,4 +1062,22 @@ form.bs-docs-example {
     padding-top: 20px;
     padding-bottom: 20px;
   }
+}
+
+
+/**
+* custom new feature
+*/
+.nav-tabs > li > a {
+  color: #000;
+}
+
+.top-navbar, .navbar-fixed-bottom .top-navbar {
+    padding: 5px;
+    padding-top: 10px;
+    background: teal;
+    border-bottom: none;
+}
+body > .navbar-fixed-top .brand {
+  color: #fff;
 }

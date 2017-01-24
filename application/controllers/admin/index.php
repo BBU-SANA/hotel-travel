@@ -41,16 +41,15 @@ class Index extends CI_Controller {
   */
 	function validate_credentials()
 	{
-		$user_name = $this->input->post('user_name');
+		$username = $this->input->post('username');
 		$password = $this->__encrip_password($this->input->post('password'));
-		$language = $this->input->post('language');
 
-		$is_valid = $this->Users_model->validate($user_name, $password);
+		$is_valid = $this->Users_model->validate($username, $password);
 
 		if($is_valid)
 		{
 			$data = array(
-				'user_name' => $user_name,
+				'username' => $username,
 				'is_logged_in' => true,
 				'is_member' => false,
 				'language' => $language

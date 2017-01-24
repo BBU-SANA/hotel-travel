@@ -18,7 +18,17 @@ class Dashboard extends CI_Controller {
 
 	public function index()
 	{
-        $this->load->view('pages/room');
-        $this->output->set_title('Booking Room');
+		if($this->session->userdata('is_logged_in')){
+			$this->load->view('admin/dashboard/index');
+			$this->load->view('admin/dashboard/model');
+			$this->output->set_title('Booking Room');
+    	}
+		elseif($this->session->userdata('logged_in'))
+		{
+			redirect('member/dashboard/');
+		}
+		else{
+    		redirect('admin');
+    	}
 	}
 }

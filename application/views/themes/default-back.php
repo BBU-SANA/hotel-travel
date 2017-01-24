@@ -216,16 +216,91 @@
 
     <title>Admin</title>
     </head>
+	
+<body>
+<!-- Navbar
+================================================== -->
+<div class="navbar navbar-fixed-top">
+	<div class="navbar-inner top-navbar">
+		<div class="container">
+			<a class="brand" data-trigger="hover" title="&copy; 2017" data-placement="bottom" data-content="BBU Students" data-toggle="popover" href="#">Hotel & Travel</a>
+			<script type="text/javascript">
+					jQuery(document).ready(function() {
+						$('#ad').popover('fade')
+					});
+			</script>
+			<form class="navbar-form pull-right">
+				<div class="input-prepend">
+					<div class="btn-group">          
+						<a class="btn" href="<?php echo base_url() ?>signout" data-toggle="modal"><i class="icon-off"></i> Log-out</a>
+						<a class="btn" href="print.php"><i class="icon-print"></i> Reports</a>          
+						<button class="btn dropdown-toggle" data-toggle="dropdown"> Action <span class="caret"></span></button>
+						<ul class="dropdown-menu">
+							<li><a href="#adduser" data-toggle="modal"><i class="icon-plus-sign"></i> Add Users</a></li>
+							<li><a href="#addroom" data-toggle="modal"><i class="icon-plus-sign"></i> Add Rooms</a></li>
+							<li><a href="#addproduct" data-toggle="modal"><i class="icon-plus-sign"></i> Add Product</a></li>
+							<li><a href="addtransaction.php"><i class="icon-plus-sign"></i> Add Transactions</a></li>
+							<li><a href="#adddiscount" data-toggle="modal"><i class="icon-plus-sign"></i> Add Discount</a></li>
+						</ul>
+					</div>
+					<input class="span2" id="prependedDropdownButton" type="text">
+				</div>
+			</form>
+		</div><!--container -->
+    </div><!--navbar-inner -->
+</div>
+<br>
 
-    <body>
-     <!-- Navbar
-        ================================================== -->
-        <div class="navbar navbar-fixed-top">
-          <div class="navbar-inner">
-            <div class="container">
-                <a class="brand" data-trigger="hover" title="&copy; 2013" data-placement="bottom" data-content="Kingsfields Express Inn" data-toggle="popover" href="#">Hotel & Travel</a>
-              	<script type="text/javascript">
-                      jQuery(document).ready(function() {
-                          $('#ad').popover('fade')
-                      });
-                  </script>
+<!-- Subhead ================================================== -->
+<!--<header class="jumbotron subhead" id="overview">
+  <div class="container">
+    <h1>
+		Hotel & Travel
+	</h1>
+    <p class="lead"><?php //include('user_name.php'); ?></p>
+  </div>    
+</header>-->
+
+<!-- content link to another pages -->
+  <?php echo $output;?>
+<!-- ============ -->
+
+      <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+	
+    <link rel="stylesheet" type="text/css" href="<?php echo base_url() ?>assets/admin/css/tcal.css" />
+	<script type="text/javascript" src="<?php echo base_url() ?>assets/admin/js/tcal.js"></script>
+
+    <script src="<?php echo base_url() ?>assets/admin/js/jquery.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-transition.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-alert.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-modal.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-dropdown.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-scrollspy.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-tab.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-tooltip.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-popover.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-button.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-collapse.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-carousel.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-typeahead.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/bootstrap-affix.js"></script>
+    
+    
+    <script type="text/javascript" charset="utf-8" language="javascript" src="<?php echo base_url() ?>assets/admin/js/jquery.dataTables.js"></script>
+	<script type="text/javascript" charset="utf-8" language="javascript" src="<?php echo base_url() ?>assets/admin/js/DT_bootstrap.js"></script>
+	
+
+    <script src="<?php echo base_url() ?>assets/admin/js/holder/holder.js"></script>
+    <script src="<?php echo base_url() ?>assets/admin/js/google-code-prettify/prettify.js"></script>
+
+    <script src="<?php echo base_url() ?>assets/admin/js/application.js"></script>
+
+	<script src="<?php echo base_url() ?>assets/admin/js/jquery.validationEngine-en.js" type="text/javascript" charset="utf-8">
+	</script>
+	<script src="<?php echo base_url() ?>assets/admin/js/jquery.validationEngine.js" type="text/javascript" charset="utf-8">
+	</script>
+
+</body>
+</html>

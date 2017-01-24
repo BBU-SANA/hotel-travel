@@ -19,7 +19,7 @@
         <form class="row">
           <div class="row">
             <div class="input-field col s6">
-                <input id="first_name" type="text" class="validate">
+                <input id="first_name" type="text" class="validate" autofocus="">
                 <label for="first_name">First Name</label>
             </div>
             <div class="input-field col s6">
